@@ -11,22 +11,22 @@ package Project;
  * @author ASUS
  */
 public class Linked {
-    Klinik head;
-    Klinik tail;
+    PasienKlinik head;
+    PasienKlinik tail;
     public Linked(){
         head=null;
         tail=null;
     }
     
-    public void antri(){
-        Klinik baru=new Klinik();
+    public void tambahAntri(){
+        PasienKlinik baru=new PasienKlinik();
         baru.input();
         if(head==null)head=baru;
         else tail.next=baru;
         tail=baru;
     }
     
-    public void terpanggil(){
+    public void panggilAntrian(){
         if(head==null){
             System.out.println("=== Data Belum Ada ===");
         }
@@ -35,14 +35,14 @@ public class Linked {
             head=head.next;
         }
     }
-    public void view(){
+    public void viewAntrian(){
         if(head==null){
             System.out.println("=== Data Belum Ada ===");
         }
         
         else{
             System.out.println("|| noAntrian \t|| Nama \t|| Usia \t|| Keperluan \t||");
-            for(Klinik a=head; a!=null; a=a.next){
+            for(PasienKlinik a=head; a!=null; a=a.next){
                 a.view();
             }
         }

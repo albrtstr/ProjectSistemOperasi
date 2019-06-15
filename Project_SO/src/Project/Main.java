@@ -27,13 +27,13 @@ public class Main {
             System.out.print("Pilih Opsi : ");
             menu = in.nextInt();
             if(menu==1){
-                link.antri();
+                link.tambahAntri();
             }
             else if(menu==2){
-                link.terpanggil();
+                link.panggilAntrian();
             }
             else if(menu==3){
-                link.view();
+                link.viewAntrian();
             }
             else if(menu==4){
                 System.out.println("Klinik sudah tutup");

@@ -12,10 +12,10 @@ import java.util.Scanner;
  *
  * @author ASUS
  */
-public class Klinik {
+public class PasienKlinik {
     int number, usia;
     String nama,perlu;
-    Klinik next;
+    PasienKlinik next;
     Scanner in = new Scanner(System.in);
     Scanner str = new Scanner(System.in);
    
@@ -30,10 +30,7 @@ public class Klinik {
         System.out.print("Masukkan Keluhan\t: ");
         perlu=str.nextLine();
         next=null;
-    }
-    public void autoNomer(int a){
-        int awal= 0;
-        awal++;
+        System.out.println("Antrian ditambah");
     }
 
     public void view(){
